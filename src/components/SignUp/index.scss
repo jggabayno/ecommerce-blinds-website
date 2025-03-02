@@ -1,0 +1,27 @@
+@import '../../assets/styles/abstracts/variables';
+
+.sign-up {
+
+    .signup-title {
+        margin-bottom: 2rem;
+    }
+
+    form {
+        width: 22%;
+        margin: 1rem auto 0 auto;
+    }
+
+    .btn-login {
+        text-transform: uppercase;
+        margin-bottom: .4rem;
+    }
+
+    a {
+        color: $primary;
+    }
+
+    // .signup {
+    //     float: right;
+       
+    // }
+}

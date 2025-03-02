@@ -1,0 +1,138 @@
+@import '../../assets/styles/abstracts/variables';
+
+.my-purchase {
+
+    position: relative;
+
+    > div {
+        width: 50%;
+        margin: 0 auto;
+
+        .order-item {
+            cursor: pointer;
+
+            > div:last-child {
+                color: $primary;
+            }
+        }
+
+    }
+
+    .order-id-x-order-status {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+        font-size: .9rem;
+        > div:first-child {
+            font-weight: bold;
+        }
+
+    }
+
+    .bottom-text-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        border-top: 1px solid #f2f2f2;
+    }
+
+
+    // clean code
+
+    .my-purchase-order {
+
+        > div {
+            margin-bottom: .5rem;
+        }
+    }
+
+
+    .orders-card {
+        margin-bottom: 1rem;
+        .ant-card-actions {
+            background: #fffefe;
+            .orders-card-bottom-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.4rem;
+                color: $dark;
+    
+                .order-total {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: $primary;
+                margin-left: .7rem;
+                }
+            }
+        }
+    }
+
+    .orders-total {
+        .ant-card-body {
+            display: flex;
+            justify-content: flex-end;
+            .ant-descriptions {
+                width: 30% !important;
+                justify-self: flex-end;
+                .ant-descriptions-item-container {
+                     .ant-descriptions-item-content {
+                        justify-content: flex-end;
+                     }
+                }
+
+               
+            }
+
+            .order-total {  
+                .ant-descriptions-item-content {
+                    color: $primary;
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                }
+            }
+
+        }
+        .ant-card-actions {
+            justify-content: flex-end;
+            padding: 1rem 1.5rem;
+            li {
+                text-align: right;
+            }
+        }
+    }
+
+    .btn-cancel-order {       
+        float: right;
+    }
+
+    .ant-spin-dot {
+        display: none;
+    }
+
+   
+    .rate-list-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: flex-start;
+        .form-rate {
+            margin-top: 1rem;
+        }
+    }
+
+    .my-purchse-payments .ant-card-body {
+        > div {
+            padding: .5rem 0 1rem 0;
+        }
+    }
+     
+}
+
+.cancellation-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

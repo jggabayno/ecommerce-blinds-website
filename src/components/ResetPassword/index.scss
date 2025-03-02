@@ -1,0 +1,23 @@
+@import '../../assets/styles/abstracts/variables';
+
+.reset-password {
+
+    .reset-password-title {
+        margin-bottom: 2rem;
+    }
+
+    form {
+        width: 22%;
+        margin: calc(100vh - 80vh) auto 0 auto;
+    }
+
+    button {
+        margin-bottom: .4rem;
+    }
+
+    .reset-password-btns .ant-form-item-control-input-content {
+        display: flex;
+        gap: 1rem;
+    }
+
+}

@@ -1,0 +1,42 @@
+@import '../../assets/styles/abstracts/variables';
+
+.cart {
+    
+    position: relative;
+
+    table {
+        
+        .cart-product-column-detail {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            .product-img-wrapper {
+                width: 4rem;
+            }
+        }
+    }
+    
+    .flex-between-center-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    .sticky {
+        margin-top: 1.4rem;
+        background: $light;
+        padding: 2rem;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    .btn-checkout {
+        width: 10rem;
+    }
+}

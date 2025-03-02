@@ -1,0 +1,147 @@
+@import '../../assets/styles/abstracts/variables';
+
+.checkout {
+     position: relative;
+     
+     > div {
+        width: 60%;
+        margin: 2rem auto 0;
+        grid-template-rows: min-content;
+     }
+
+    table {
+        margin-bottom: 1rem;
+        .checkout-product-column-detail {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+ 
+            .product-img-wrapper {
+                width: 4rem;
+            }
+        }
+    }
+    
+    .flex-between-center-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .btn-placeorder {
+        width: 10rem;
+    }
+
+    .payment-option.ant-radio-group {
+        display: flex;
+        gap: 2rem;
+    }
+ 
+
+    .ant-card {
+        margin-bottom: 1rem;
+    }
+
+    .total-card {
+        .ant-card-body {
+            display: flex;
+            justify-content: flex-end;
+            .ant-descriptions {
+                width: 20% !important;
+                justify-self: flex-end;
+                .ant-descriptions-item-container {
+                     .ant-descriptions-item-content {
+                        justify-content: flex-end;
+                     }
+                }
+
+               
+            }
+
+        }
+        .ant-card-actions {
+            justify-content: flex-end;
+            padding: 1rem 1.5rem;
+            li {
+                text-align: right;
+            }
+        }
+    }
+
+}
+
+.order-form {
+    .ant-form-item {
+        margin: .2rem 0;
+
+        button {
+            padding: 0;
+        }
+    }
+
+    .form-item-name-mobile-number {
+        font-weight: bold;
+    }
+
+    label.ant-form-item-no-colon {
+        color: #a0a0a0;
+    }
+
+}
+
+input.editAddress {
+    border: 1px solid #e6e6e6;
+    pointer-events: initial;
+    resize: initial;
+    padding: .2rem .4rem !important;
+ }
+
+ input.unEditAddress {
+    padding: 0;
+    border: none;
+    resize: none; 
+    // pointer-events: none;
+ }
+
+ .payment-option-tabpane-span {
+
+    img {
+        object-fit: scale-down;
+    }
+
+    &.gcash-tabpage img {
+        width: 7rem;
+    }
+
+    &.bpi-tabpage img {
+        width: 5rem;
+    }
+ 
+ }
+
+ .checkout-total {  
+     .ant-descriptions-item-content {
+         color: $primary;
+         font-weight: bold;
+         font-size: 1.4rem;
+     }
+ }
+
+
+ .payment-option-card .ant-card-body {
+
+    &::before {
+        display: none;
+    }
+      
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 3rem;
+
+    .btn-upload {
+        width: 7rem;
+    }
+
+
+}
